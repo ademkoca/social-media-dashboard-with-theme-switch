@@ -32,11 +32,9 @@ body {
     background-color: var(--background);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
-    padding: 2rem auto;
-    max-width: 2000px;
-    margin: 0px auto;    
-    padding: 0 10px;
 }
+
+
 .divider {
     border-top: .5px solid var(--card-heading);
     width: 100%;
@@ -84,7 +82,7 @@ header {
     border-top: 3px solid var(--facebook);
     border-radius: 5px;
     padding: 1rem 3rem;
-    grid-template-columns: .6fr 1.3fr;
+    grid-template-columns: .5fr 1.5fr;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
 
