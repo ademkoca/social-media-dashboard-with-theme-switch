@@ -50,7 +50,7 @@
   </head>
   <body>
 
-      <div class="container">
+      <div class="container pt-4">
         <header>
           <h1>Social Media Dashboard</h1>
           <div class="theme-switch-wrapper">
@@ -158,6 +158,36 @@
             <span class="overview-arrow-down bottom-right">12%</span>
           </div>
         </div>
+        <!--Live toast-->
+    <div
+    class="toast position-absolute top-0 end-0"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    autohide="false"
+  >
+    <div class="toast-body">
+      Hi! If you like this app, make sure to check out my other apps.
+      <div class="mt-2 pt-2 mb-4 border-top">
+        <button type="button" class="btn btn-primary btn-sm toast-btn">
+          <a
+            class="toast-link"
+            href="https://ademkoca.github.io/portfolio"
+            target="_blank"
+            >Check out!</a
+          >
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary btn-sm toast-btn"
+          data-bs-dismiss="toast"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--/Live toast-->
         <footer class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -165,7 +195,18 @@
           >. Coded by <a href="https://www.frontendmentor.io/profile/ademkoca" target="_blank">Adem Koca</a>.
         </footer>
       </div>
-   
+      <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"
+      integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u"
+      crossorigin="anonymous"
+    ></script>
+  <script>
+      window.onload = (event) => {
+        let myAlert = document.querySelector(".toast");
+        let bsAlert = new bootstrap.Toast(myAlert);
+        bsAlert.show();
+      };
+    </script>
     <script src="app.js"></script>
   </body>
 </html>
